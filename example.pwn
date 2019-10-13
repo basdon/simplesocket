@@ -1,5 +1,5 @@
-#include <a_samp.inc>
-#include <simplesocket.inc>
+#include <a_samp>
+#include <simplesocket>
 
 main()
 {

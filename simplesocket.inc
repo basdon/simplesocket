@@ -14,7 +14,7 @@ native ssocket_connect(ssocket:handle, address[], port);
 ///   ssocket_listen to listen.
 /// </summary>
 /// <remarks>Max amount of sockets is 10 when I wrote this line.</remarks>
-/// <returns>0 on failure.</returns>
+/// <returns>A socket handle or -1 on error.</returns>
 native ssocket:ssocket_create();
 
 /// <summary>Destroys a socket.</summary>

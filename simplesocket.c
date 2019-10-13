@@ -307,6 +307,7 @@ PLUGIN_EXPORT void PLUGIN_CALL Unload()
 			_ssocket_close(&s->handle);
 			closed++;
 		}
+		s++;
 	}
 	if (closed) {
 		logprintf("simplesocket: closed %d unclosed sockets", closed);

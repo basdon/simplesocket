@@ -1,6 +1,8 @@
 
 // vim: set filetype=c ts=8 noexpandtab:
 
+#define INVALID_SOCKET (-1)
+
 /// <summary>
 ///   Connects given socket to given address, port.
 ///   On success you can send using ssocket_send.

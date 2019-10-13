@@ -1,5 +1,5 @@
-#include "a_samp.inc"
-#include "../simplesocket.pwn"
+#include <a_samp.inc>
+#include <simplesocket.inc>
 
 main()
 {
@@ -31,11 +31,12 @@ public OnGameModeExit()
 public SSocket_OnRecv(ssocket:handle, data[], len)
 {
 	if (handle == in) {
-		// get the sent string, zero byte, and byte value 66
-		strunpack(buf, data);
-		printf("string: %s", buf);
+		// print the zero byte and byte value 66
 		printf("zero byte: %d", data{12});
 		printf("66 byte: %d", data{13});
+		// get the sent string
+		strunpack(buf, data);
+		printf("string: %s", buf);
 
 		// note: if the byte order is different from what strunpack
 		//       expects, you can use ssocket_strunpack

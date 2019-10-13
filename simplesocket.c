@@ -3,17 +3,16 @@
 
 #include "vendor/SDK/amx/amx.h"
 #include "vendor/SDK/plugincommon.h"
+#include <string.h>
 
 #if (defined(WIN32) || defined(_WIN32) || defined(_WIN64))
 	#include "windows.h"
 	#include "io.h"
 	#pragma comment(lib, "ws2_32.lib")
 #else
-	TODO:which ones of these are actually needed?
 	#include "sys/types.h"
 	#include "sys/socket.h"
 	#include "arpa/inet.h"
-	#include "netdb.h"
 	#include "fcntl.h"
 	#include "unistd.h"
 #endif

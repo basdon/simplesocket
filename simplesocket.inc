@@ -61,5 +61,7 @@ native ssocket_strunpack(dest[], source[], maxlength=sizeof(dest));
 ///   receives data.
 /// </summary>
 /// <param name="data">Received data, is NOT zero terminated.</param>
-/// <remarks>This is only called in the script that made the socket.</remarks>
+/// <remarks>
+///   This is only called in the script that made the call to ssocket_listen.
+/// </remarks>
 forward SSocket_OnRecv(ssocket:handle, data[], len);

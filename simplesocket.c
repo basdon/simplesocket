@@ -151,7 +151,7 @@ static cell AMX_NATIVE_CALL ssocket_listen(AMX *amx, cell *params)
 		return 0;
 	}
 	_ssocket_set_nonblocking(s->handle);
-	return 0;
+	return 1;
 }
 
 /*native ssocket_send(ssocket:handle, data[], len)*/
